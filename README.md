@@ -12,6 +12,14 @@ A pocket MP3 player for the **Heltec WiFi LoRa 32 V3** (ESP32-S3), with:
 
 > **Why a Bluetooth module?** The ESP32-S3 only has Bluetooth Low Energy. Headsets stream music over Classic Bluetooth (A2DP), which the S3 doesn't have. The KCX_BT_EMITTER (a few dollars) handles the headset, and the player controls it over serial "AT" commands.
 
+![Web control panel](screenshots/Web-panel-screens.png)
+
+<details><summary>OLED screens (rendered from the real U8g2 fonts)</summary>
+
+![OLED screens](screenshots/OLED-screens.png)
+
+</details>
+
 ## Flashing
 
 1. Open **`flasher/index.html`** in Chrome or Edge on a computer. It also works from GitHub Pages.
@@ -96,6 +104,14 @@ python3 flasher/build_flasher.py <merged.bin> <version> <esptool-js bundle.js>
 ```
 
 `bundle.js` comes from the npm package `esptool-js`.
+
+## Screen simulator
+
+`tools/oled_sim.c` draws every OLED screen with the real U8g2 C library and fonts, so you can preview the layout without hardware:
+
+```
+gcc -I<U8g2>/src/clib tools/oled_sim.c <U8g2>/src/clib/*.c -o sim && mkdir -p out png && ./sim && python3 tools/render.py
+```
 
 ## Credits
 

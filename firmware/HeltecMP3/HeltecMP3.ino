@@ -542,7 +542,7 @@ void drawAbout() {
   oled.drawStr(0, 23, "Heltec MP3  v" FW_VERSION);
   oled.drawStr(0, 34, wifiIP().length() ? ("IP " + wifiIP()).c_str() : "Heltec V3 ESP32-S3");
   oled.drawStr(0, 45, "PRG: tap=down 2tap=up");
-  oled.drawStr(0, 56, "hold=OK  hold 1.5s=back");
+  oled.drawStr(0, 56, "hold=OK  long=back");
 }
 
 void drawNoSD() {
