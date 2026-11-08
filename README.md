@@ -22,9 +22,18 @@ It has:
 
 ![Web control panel](screenshots/Web-panel-screens.png)
 
-<details><summary>OLED screens (rendered from the real U8g2 fonts)</summary>
+## OLED screens
 
-![OLED screens](screenshots/OLED-screens.png)
+The player's 0.96" screen, rendered with the same U8g2 fonts the firmware uses:
+
+<table>
+<tr><td align="center"><img src="screenshots/oled/02_home.png" width="260" alt="Home menu"><br><sub>Home menu</sub></td><td align="center"><img src="screenshots/oled/04_now_playing.png" width="260" alt="Now Playing"><br><sub>Now Playing</sub></td><td align="center"><img src="screenshots/oled/03_browse.png" width="260" alt="Browsing a folder"><br><sub>Browsing a folder</sub></td></tr>
+<tr><td align="center"><img src="screenshots/oled/07_bluetooth_scan.png" width="260" alt="Bluetooth scan"><br><sub>Bluetooth scan</sub></td><td align="center"><img src="screenshots/oled/10_wifi.png" width="260" alt="Wi-Fi"><br><sub>Wi-Fi</sub></td><td align="center"><img src="screenshots/oled/06_controls.png" width="260" alt="Controls menu"><br><sub>Controls menu</sub></td></tr>
+</table>
+
+<details><summary>All screens</summary>
+
+![All OLED screens](screenshots/OLED-screens.png)
 
 </details>
 
