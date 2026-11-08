@@ -1,6 +1,14 @@
-# Heltec MP3
+# Heltec V3 MP3 + BT
 
-A pocket MP3 player for the **Heltec WiFi LoRa 32 V3** (ESP32-S3), with:
+<p align="center">
+  <a href="https://hardwaremack-prog.github.io/Heltec-V3-MP3-BT/"><img alt="Flash it in your browser" src="https://img.shields.io/badge/%E2%9A%A1%20Flash%20it%20in%20your%20browser-V3%20%26%20V4-3aa0ff?style=for-the-badge"></a>
+</p>
+
+**One-click install:** open **[hardwaremack-prog.github.io/Heltec-V3-MP3-BT](https://hardwaremack-prog.github.io/Heltec-V3-MP3-BT/)** in Chrome or Edge, plug in your Heltec **V3 or V4**, and click *Connect & Flash*. It detects which board you have and installs the right firmware.
+
+A pocket MP3 player for the **Heltec WiFi LoRa 32 V3** (ESP32-S3). Have a V4? See the expanded version: [Heltec-V4-MP3-BT](https://github.com/hardwaremack-prog/Heltec-V4-MP3-BT).
+
+It has:
 
 - **OLED menus** on the built-in 0.96" screen: file browser, Now Playing (title, artist, progress, time), settings
 - **Controls** with only the **PRG button**, or 4 optional add-on buttons
@@ -22,7 +30,7 @@ A pocket MP3 player for the **Heltec WiFi LoRa 32 V3** (ESP32-S3), with:
 
 ## Flashing
 
-1. Open **`flasher/index.html`** in Chrome or Edge on a computer. It also works from GitHub Pages.
+1. Easiest: use the **[web flasher](https://hardwaremack-prog.github.io/Heltec-V3-MP3-BT/)**. Or open **`flasher/index.html`** in Chrome or Edge on a computer (it works offline).
 2. Plug in the Heltec V3 with a USB-C data cable, then click **Connect & Flash** and pick the CP210x port.
 3. Leave **Erase the whole flash first** ticked if the board had Meshtastic or another firmware on it.
 
@@ -112,6 +120,10 @@ python3 flasher/build_flasher.py <merged.bin> <version> <esptool-js bundle.js>
 ```
 gcc -I<U8g2>/src/clib tools/oled_sim.c <U8g2>/src/clib/*.c -o sim && mkdir -p out png && ./sim && python3 tools/render.py
 ```
+
+## Web flasher (GitHub Pages)
+
+`docs/` is the online flasher served at the link above. It holds both firmwares (`docs/firmware/`), so the same page flashes a V3 or a V4. When you build a new firmware, copy the trimmed merged `.bin` into `docs/firmware/` and update the version in `docs/index.html`.
 
 ## Credits
 
