@@ -53,6 +53,10 @@ For wireless updates from the web page (System tab), use `releases/heltec-mp3-ap
 
 ## Wiring
 
+### microSD card
+
+![microSD wiring for the Heltec V3](screenshots/wiring/sd-wiring-V3.png)
+
 | microSD module (3.3 V SPI) | Heltec V3 |
 |---|---|
 | VCC / GND | 3V3 / GND |
