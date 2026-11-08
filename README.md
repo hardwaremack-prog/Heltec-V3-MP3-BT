@@ -60,7 +60,7 @@ For wireless updates from the web page (System tab), use `releases/heltec-mp3-ap
 | microSD module (3.3 V SPI) | Heltec V3 |
 |---|---|
 | VCC / GND | 3V3 / GND |
-| SCK | GPIO 40 |
+| CLK (SCK) | GPIO 40 |
 | MOSI | GPIO 41 |
 | MISO | GPIO 42 |
 | CS | GPIO 39 |
